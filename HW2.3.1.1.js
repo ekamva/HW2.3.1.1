@@ -1,39 +1,23 @@
 let allScores = [];
 
-const players = [
-    {
-    "id": 1,
-    "name": "Ivan",
-    "scorePoints": 4500
-    },
-    {
-    "id": 2,
-    "name": "Petr",
-    "scorePoints": 3600
-    },
-    {
-    "id": 3,
-    "name": "Vadim",
-    "scorePoints": 3433
-    },
-    {
-    "id": 4,
-    "name": "Olga",
-    "scorePoints": 2356
-    },
-    
-    ];
+const secondGroup = [
+    { id: 1, name: "Alice", scorePoints: 5000 },
+    { id: 2, name: "Bob", scorePoints: 6200 },
+    { id: 3, name: "Charlie", scorePoints: 4800 },
+    { id: 4, name: "Diana", scorePoints: 5900 },
+    { id: 5, name: "Eve", scorePoints: 6200 }
+];
 
-    for (let elementKey in players) {
-        allScores.push(players[elementKey].scorePoints)
+for (let elementKey in secondGroup) {
+        allScores.push(secondGroup[elementKey].scorePoints)
         }
 
 let bestScore = Math.max(...allScores)
 let bestPlayer = ""
 
 for (let elementKey in players){
-    if (players[elementKey].scorePoints === bestScore) {
-        bestPlayer = players[elementKey].name
+    if (secondGroup[elementKey].scorePoints === bestScore) {
+        bestPlayer = secondGroup[elementKey].name
     }
 }
 
